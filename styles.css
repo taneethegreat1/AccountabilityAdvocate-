@@ -5,19 +5,20 @@ body {
   padding: 0;
   color: #333;
   line-height: 1.6;
-  background: linear-gradient(to bottom, #fdfdfd, #eaeaea);
+  background: #fdfdfd; /* Neutral background for readability */
 }
 
 h1, h2, h3 {
-  color: #003366;
+  color: #003366; /* Consistent blue for headings */
   text-align: center;
+  margin-bottom: 10px;
 }
 
 p {
   margin: 10px auto;
-  max-width: 600px; /* Restrict width for readability */
-  text-align: justify; /* Align the text neatly */
-  line-height: 1.8; /* Add better spacing between lines */
+  max-width: 700px; /* Restrict text width for better readability */
+  line-height: 1.8;
+  text-align: justify; /* Align text neatly */
 }
 
 /* Navigation Bar */
@@ -50,7 +51,7 @@ p {
   color: white;
 }
 
-.hero .logo {
+.header-logo {
   width: 150px;
   margin-bottom: 20px;
 }
@@ -64,80 +65,62 @@ p {
   font-size: 1.2em;
 }
 
-.hero .cta {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 15px 30px;
-  background: #ffd700;
-  color: #003366;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+/* Mission Section */
+.mission {
+  text-align: center;
+  padding: 40px;
+  background: #f4f4f4;
 }
 
-.hero .cta:hover {
-  background: #003366;
-  color: white;
+.mission p {
+  font-size: 1.2em;
+  margin: 0 auto;
 }
 
 /* About Section */
 .about {
-  text-align: center;
-  padding: 40px;
-  background: #f4f4f4;
+  padding: 40px 20px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.about .profile-image {
-  width: 150px;
+.about-content {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-image {
+  width: 200px;
   height: auto;
   border-radius: 50%;
-  margin: 20px auto;
-  display: block;
+  margin: 20px;
 }
 
-/* About Me & Mission Sections */
-.about-me, .mission {
-  text-align: center;
-  padding: 30px;
-  background: #fff;
+.about-text {
+  max-width: 600px;
 }
 
-.about-me p, .mission p {
-  font-size: 1.2em;
-  max-width: 600px; /* Restrict text width */
-  margin: 0 auto;
-}
-
-.about-me h2, .mission h2 {
-  font-size: 2em;
-  color: #8b0000;
-}
-
-/* Featured Episodes */
-.episodes {
+/* Why This Series Matters Section */
+.why-this-matters {
   text-align: center;
   padding: 40px;
   background: #f4f4f4;
 }
 
-.episodes .episode {
-  display: inline-block;
-  width: 45%;
-  margin: 10px;
-  vertical-align: top;
+.why-this-matters ul {
+  list-style: none;
+  padding: 0;
 }
 
-.episodes .episode img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.episodes h3 {
-  color: #003366;
-  font-size: 1.5em;
+.why-this-matters ul li {
+  margin: 10px 0;
+  font-size: 1.2em;
 }
 
 /* Contact Section */
@@ -196,7 +179,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Media Queries for Mobile Devices */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2em;
@@ -206,18 +189,17 @@ footer a:hover {
     font-size: 1em;
   }
 
-  .hero .cta {
-    padding: 10px 20px;
-    font-size: 1em;
+  .profile-image {
+    width: 150px; /* Smaller for mobile screens */
   }
 
-  .about .profile-image {
-    width: 120px; /* Smaller for mobile screens */
+  .about {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .episodes .episode {
-    width: 100%; /* Make episodes stack on smaller screens */
-    margin-bottom: 20px;
+  .about-text {
+    margin: 20px auto;
   }
 
   .navbar a {
@@ -228,86 +210,4 @@ footer a:hover {
   .contact form {
     width: 90%; /* Expand form to take most of the screen on mobile */
   }
-}
-/* Set universal font styles */
-body {
-  font-family: 'Lato', Arial, sans-serif; /* Use Lato for a clean, professional look */
-  margin: 0;
-  padding: 0;
-  color: #333;
-  line-height: 1.6; /* Consistent line spacing */
-  background: linear-gradient(to bottom, #fdfdfd, #eaeaea);
-}
-
-/* Headings */
-h1, h2, h3 {
-  font-family: 'Lato', Arial, sans-serif; /* Ensure headings use the same font */
-  font-weight: 700; /* Use bold for headings */
-  margin-bottom: 10px;
-  text-align: center;
-  color: #003366; /* Professional dark blue */
-}
-
-/* Paragraph text */
-p {
-  font-family: 'Lato', Arial, sans-serif; /* Ensure paragraphs use the same font */
-  font-size: 1em;
-  color: #333;
-  margin: 10px auto;
-  max-width: 600px; /* Restrict width for readability */
-  line-height: 1.8; /* Add consistent spacing between lines */
-  text-align: justify; /* Align text neatly */
-}
-
-/* Navigation Bar */
-.navbar {
-  font-family: 'Lato', Arial, sans-serif; /* Keep font consistent for navigation */
-  position: sticky;
-  top: 0;
-  background: #003366;
-  padding: 10px 0;
-  text-align: center;
-  z-index: 1000;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-  font-size: 1em;
-}
-
-.navbar a:hover {
-  background: #ffd700;
-  color: #003366;
-}
-
-/* Buttons (e.g., Call-to-Action) */
-button, .cta {
-  font-family: 'Lato', Arial, sans-serif; /* Keep buttons consistent */
-  font-weight: bold;
-  font-size: 1em;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover, .cta:hover {
-  background: #003366;
-  color: white;
-}
-/* Header Section */
-.hero {
-  background: linear-gradient(90deg, #003366, #8b0000); /* Gradient background */
-  text-align: center;
-  padding: 20px 0;
-}
-
-.header-logo {
-  width: 60%; /* Adjust the logo size to fit the header */
-  max-width: 500px; /* Ensure it doesn't get too large on wider screens */
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
