@@ -111,3 +111,34 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+.hero .logo {
+  width: 80px; /* Resize the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add spacing below the logo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about .profile-image {
+  width: 150px; /* Slightly larger size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular shape */
+  margin: 20px auto; /* Center the image */
+  display: block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow for emphasis */
+}
+.about h2 {
+  color: #003366;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 600px; /* Keep the text width manageable */
+  margin-left: auto;
+  margin-right: auto;
+}
