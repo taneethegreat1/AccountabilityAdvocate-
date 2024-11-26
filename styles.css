@@ -211,3 +211,46 @@ footer a:hover {
     width: 90%; /* Expand form to take most of the screen on mobile */
   }
 }
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap; /* Adjust layout on smaller screens */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Center-align text */
+  padding: 40px 20px;
+  background: #fff;
+  gap: 20px; /* Add spacing between elements */
+}
+
+.profile-image,
+.avatar-image {
+  width: 200px;
+  height: auto;
+  border-radius: 50%; /* Circular appearance for both images */
+  margin: 10px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+}
+
+.about-content {
+  max-width: 1200px; /* Restrict the maximum width of content */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Ensure all items are centered */
+}
+
+.about-text {
+  max-width: 800px; /* Restrict text width for readability */
+  margin: 20px auto;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #003366; /* Professional blue for heading */
+}
+
+.about-text p {
+  margin: 10px 0;
+  line-height: 1.8;
+}
