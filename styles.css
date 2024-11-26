@@ -1,63 +1,45 @@
-.about {
-  text-align: center;
-  padding: 20px;
-  background: #f4f4f4;
-}
-
-.about .profile-image {
-  width: 120px; /* Adjust the size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Make it circular */
-  margin: 20px auto; /* Center the image */
-  display: block;
-
-}}.community {
-  text-align: center;
-  padding: 20px;
-  background: #eaeaea;
-}
-
-.community .community-image {
-  width: 300px; /* Adjust size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional styling */
-  margin: 20px auto;
-  display: block;
-.episodes .episode img {
-  width: 100%; /* Scale the images */
-  max-width: 300px; /* Limit the maximum size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 5px; /* Slight rounding for aesthetics */
-  margin: 10px auto;
-}
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #333;
   line-height: 1.6;
   background: #fdfdfd;
 }
 
 h1, h2, h3 {
-  color: #333;
+  color: #003366;
+  margin-bottom: 10px;
 }
 
-header {
+p {
+  margin: 10px 0;
+}
+
+/* Header Styles */
+.hero {
   text-align: center;
+  padding: 30px 20px;
   background: linear-gradient(90deg, #003366, #8b0000);
   color: white;
-  padding: 20px 10px;
 }
 
-header h1 {
+.hero .logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
   font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-header p {
+.hero p {
   font-size: 1.2em;
 }
 
-header .cta {
+.hero .cta {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
@@ -68,20 +50,29 @@ header .cta {
   border-radius: 5px;
 }
 
-header .cta:hover {
+.hero .cta:hover {
   background: #003366;
   color: white;
 }
 
-footer {
+/* About Section */
+.about {
   text-align: center;
-  background: #333;
-  color: white;
-  padding: 10px 0;
+  padding: 30px;
+  background: #f4f4f4;
 }
-  .episodes {
+
+.about .profile-image {
+  width: 120px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Episodes Section */
+.episodes {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 .episodes .episode {
@@ -96,9 +87,27 @@ footer {
   max-width: 300px;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .episodes h3 {
   color: #003366;
   font-size: 1.5em;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  background: #003366;
+  color: white;
+  padding: 20px 10px;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
