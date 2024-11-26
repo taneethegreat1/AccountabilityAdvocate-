@@ -229,3 +229,71 @@ footer a:hover {
     width: 90%; /* Expand form to take most of the screen on mobile */
   }
 }
+/* Set universal font styles */
+body {
+  font-family: 'Lato', Arial, sans-serif; /* Use Lato for a clean, professional look */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6; /* Consistent line spacing */
+  background: linear-gradient(to bottom, #fdfdfd, #eaeaea);
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Lato', Arial, sans-serif; /* Ensure headings use the same font */
+  font-weight: 700; /* Use bold for headings */
+  margin-bottom: 10px;
+  text-align: center;
+  color: #003366; /* Professional dark blue */
+}
+
+/* Paragraph text */
+p {
+  font-family: 'Lato', Arial, sans-serif; /* Ensure paragraphs use the same font */
+  font-size: 1em;
+  color: #333;
+  margin: 10px auto;
+  max-width: 600px; /* Restrict width for readability */
+  line-height: 1.8; /* Add consistent spacing between lines */
+  text-align: justify; /* Align text neatly */
+}
+
+/* Navigation Bar */
+.navbar {
+  font-family: 'Lato', Arial, sans-serif; /* Keep font consistent for navigation */
+  position: sticky;
+  top: 0;
+  background: #003366;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1em;
+}
+
+.navbar a:hover {
+  background: #ffd700;
+  color: #003366;
+}
+
+/* Buttons (e.g., Call-to-Action) */
+button, .cta {
+  font-family: 'Lato', Arial, sans-serif; /* Keep buttons consistent */
+  font-weight: bold;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, .cta:hover {
+  background: #003366;
+  color: white;
+}
