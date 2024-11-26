@@ -79,3 +79,26 @@ footer {
   color: white;
   padding: 10px 0;
 }
+  .episodes {
+  text-align: center;
+  padding: 20px;
+}
+
+.episodes .episode {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.episodes .episode img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.episodes h3 {
+  color: #003366;
+  font-size: 1.5em;
+}
