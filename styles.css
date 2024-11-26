@@ -517,3 +517,35 @@ footer {
   color: white;
   padding: 20px;
 }
+/* Video Carousel Section */
+.video-carousel {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.video-carousel h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  gap: 20px; /* Adds space between videos */
+}
+
+.video-wrapper {
+  max-width: 500px; /* Restrict maximum width of each video */
+  width: 100%; /* Responsive width */
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
+}
