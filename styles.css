@@ -1,18 +1,21 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  line-height: 1.6;
-}
-
-.hero {
+.about {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(90deg, #003366, #8b0000);
-  color: white;
+  background: #f4f4f4;
 }
 
-.hero .logo {
-  width: 80px;
-  margin-bottom: 10px
+.about .profile-image {
+  width: 120px; /* Adjust the size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make it circular */
+  margin: 20px auto; /* Center the image */
+  display: block;
+}
+
+.episodes .episode img {
+  width: 100%; /* Scale the images */
+  max-width: 300px; /* Limit the maximum size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Slight rounding for aesthetics */
+  margin: 10px auto;
+}
