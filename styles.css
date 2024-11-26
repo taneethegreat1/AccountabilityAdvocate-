@@ -10,8 +10,19 @@
   border-radius: 50%; /* Make it circular */
   margin: 20px auto; /* Center the image */
   display: block;
+
+}}.community {
+  text-align: center;
+  padding: 20px;
+  background: #eaeaea;
 }
 
+.community .community-image {
+  width: 300px; /* Adjust size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional styling */
+  margin: 20px auto;
+  display: block;
 .episodes .episode img {
   width: 100%; /* Scale the images */
   max-width: 300px; /* Limit the maximum size */
