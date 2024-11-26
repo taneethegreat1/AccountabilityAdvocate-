@@ -30,3 +30,52 @@
   border-radius: 5px; /* Slight rounding for aesthetics */
   margin: 10px auto;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fdfdfd;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(90deg, #003366, #8b0000);
+  color: white;
+  padding: 20px 10px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+header .cta {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ffd700;
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+header .cta:hover {
+  background: #003366;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 10px 0;
+}
