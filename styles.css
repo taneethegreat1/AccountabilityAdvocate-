@@ -122,7 +122,30 @@ p {
   margin: 10px 0;
   font-size: 1.2em;
 }
+.video-carousel {
+  text-align: center;
+  padding: 40px;
+  background-color: #f4f4f4;
+}
 
+.video-carousel h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carousel video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 /* Contact Section */
 .contact {
   text-align: center;
