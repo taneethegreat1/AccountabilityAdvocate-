@@ -5,150 +5,19 @@ body {
   padding: 0;
   color: #333;
   line-height: 1.6;
-  background: #fdfdfd;
-}
-
-h1, h2, h3 {
-  color: #003366;
-  margin-bottom: 10px;
-}
-
-p {
-  margin: 10px 0;
-}
-
-/* Header Styles */
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-  background: linear-gradient(90deg, #003366, #8b0000);
-  color: white;
-}
-
-.hero .logo {
-  width: 120px;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2em;
-}
-
-.hero .cta {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 15px 30px;
-  background: #ffd700;
-  color: #003366;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.hero .cta:hover {
-  background: #003366;
-  color: white;
-}
-
-/* About Section */
-.about {
-  text-align: center;
-  padding: 40px;
-  background: #f4f4f4;
-}
-
-.about .profile-image {
-  width: 150px;
-  border-radius: 50%;
-  margin: 20px auto;
-  display: block;
-}
-
-/* About Me Section */
-.about-me, .mission {
-  text-align: center;
-  padding: 30px;
-}
-
-.about-me h2, .mission h2 {
-  color: #8b0000;
-  font-size: 2em;
-}
-
-.about-me p, .mission p {
-  font-size: 1.2em;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Episodes Section */
-.episodes {
-  text-align: center;
-  padding: 40px;
-}
-
-.episodes .episode {
-  display: inline-block;
-  width: 45%;
-  margin: 10px;
-  vertical-align: top;
-}
-
-.episodes .episode img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.episodes h3 {
-  color: #003366;
-  font-size: 1.5em;
-}
-
-/* Footer Section */
-footer {
-  text-align: center;
-  background: #003366;
-  color: white;
-  padding: 20px 10px;
-}
-
-footer a {
-  color: #ffd700;
-  text-decoration: none;
-}
-/* General Styles */
-body {
-  font-family: Arial,
-footer a:hover {
-  text-decoration: underline;
-}
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  line-height: 1.6;
   background: linear-gradient(to bottom, #fdfdfd, #eaeaea);
 }
 
 h1, h2, h3 {
   color: #003366;
-  margin-bottom: 10px;
   text-align: center;
 }
 
 p {
   margin: 10px auto;
-  max-width: 90%; /* Restrict text width on all devices */
+  max-width: 600px; /* Restrict width for readability */
+  text-align: justify; /* Align the text neatly */
+  line-height: 1.8; /* Add better spacing between lines */
 }
 
 /* Navigation Bar */
@@ -220,6 +89,7 @@ p {
 
 .about .profile-image {
   width: 150px;
+  height: auto;
   border-radius: 50%;
   margin: 20px auto;
   display: block;
@@ -234,7 +104,7 @@ p {
 
 .about-me p, .mission p {
   font-size: 1.2em;
-  max-width: 600px; /* Restrict text width for readability */
+  max-width: 600px; /* Restrict text width */
   margin: 0 auto;
 }
 
@@ -342,7 +212,7 @@ footer a:hover {
   }
 
   .about .profile-image {
-    width: 120px;
+    width: 120px; /* Smaller for mobile screens */
   }
 
   .episodes .episode {
