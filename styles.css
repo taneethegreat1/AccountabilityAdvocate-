@@ -124,7 +124,238 @@ footer a {
   color: #ffd700;
   text-decoration: none;
 }
+/* General Styles */
+body {
+  font-family: Arial,
+footer a:hover {
+  text-decoration: underline;
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #fdfdfd, #eaeaea);
+}
+
+h1, h2, h3 {
+  color: #003366;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  margin: 10px auto;
+  max-width: 90%; /* Restrict text width on all devices */
+}
+
+/* Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #003366;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1em;
+}
+
+.navbar a:hover {
+  background: #ffd700;
+  color: #003366;
+}
+
+/* Header Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(90deg, #003366, #8b0000);
+  color: white;
+}
+
+.hero .logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.hero .cta {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px 30px;
+  background: #ffd700;
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero .cta:hover {
+  background: #003366;
+  color: white;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 40px;
+  background: #f4f4f4;
+}
+
+.about .profile-image {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+/* About Me & Mission Sections */
+.about-me, .mission {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+}
+
+.about-me p, .mission p {
+  font-size: 1.2em;
+  max-width: 600px; /* Restrict text width for readability */
+  margin: 0 auto;
+}
+
+.about-me h2, .mission h2 {
+  font-size: 2em;
+  color: #8b0000;
+}
+
+/* Featured Episodes */
+.episodes {
+  text-align: center;
+  padding: 40px;
+  background: #f4f4f4;
+}
+
+.episodes .episode {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.episodes .episode img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.episodes h3 {
+  color: #003366;
+  font-size: 1.5em;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: #003366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #8b0000;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  background: #003366;
+  color: white;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .hero .cta {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .about .profile-image {
+    width: 120px;
+  }
+
+  .episodes .episode {
+    width: 100%; /* Make episodes stack on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .navbar a {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .contact form {
+    width: 90%; /* Expand form to take most of the screen on mobile */
+  }
 }
