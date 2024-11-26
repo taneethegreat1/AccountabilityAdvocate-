@@ -297,3 +297,17 @@ button:hover, .cta:hover {
   background: #003366;
   color: white;
 }
+/* Header Section */
+.hero {
+  background: linear-gradient(90deg, #003366, #8b0000); /* Gradient background */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-logo {
+  width: 60%; /* Adjust the logo size to fit the header */
+  max-width: 500px; /* Ensure it doesn't get too large on wider screens */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
