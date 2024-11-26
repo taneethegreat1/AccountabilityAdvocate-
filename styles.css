@@ -591,3 +591,26 @@ footer {
   background: #8b0000;
   color: white;
 }
+/* Video Section */
+.video-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.video-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.video-wrapper {
+  max-width: 720px; /* Match the width of the video */
+  margin: 0 auto; /* Center the video container */
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
