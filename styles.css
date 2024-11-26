@@ -339,4 +339,39 @@ footer a:hover {
  p {
   margin: 10px 0;
   line-height: 1.8;
+} 
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(90deg, #003366, #8b0000);
+  color: white;
+}
+
+.header-avatar {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Community Section */
+.community-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Social Media Links */
+.social-media a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
 }
