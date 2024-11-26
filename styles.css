@@ -20,18 +20,18 @@ p {
 /* Header Styles */
 .hero {
   text-align: center;
-  padding: 30px 20px;
+  padding: 40px 20px;
   background: linear-gradient(90deg, #003366, #8b0000);
   color: white;
 }
 
 .hero .logo {
-  width: 100px;
+  width: 120px;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 10px;
 }
 
@@ -42,7 +42,7 @@ p {
 .hero .cta {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 15px 30px;
   background: #ffd700;
   color: #003366;
   text-decoration: none;
@@ -58,21 +58,38 @@ p {
 /* About Section */
 .about {
   text-align: center;
-  padding: 30px;
+  padding: 40px;
   background: #f4f4f4;
 }
 
 .about .profile-image {
-  width: 120px;
+  width: 150px;
   border-radius: 50%;
   margin: 20px auto;
   display: block;
 }
 
+/* About Me Section */
+.about-me, .mission {
+  text-align: center;
+  padding: 30px;
+}
+
+.about-me h2, .mission h2 {
+  color: #8b0000;
+  font-size: 2em;
+}
+
+.about-me p, .mission p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /* Episodes Section */
 .episodes {
   text-align: center;
-  padding: 30px;
+  padding: 40px;
 }
 
 .episodes .episode {
@@ -110,35 +127,4 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
-.hero .logo {
-  width: 80px; /* Resize the logo */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Add spacing below the logo */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.about .profile-image {
-  width: 150px; /* Slightly larger size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Circular shape */
-  margin: 20px auto; /* Center the image */
-  display: block;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow for emphasis */
-}
-.about h2 {
-  color: #003366;
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-.about p {
-  font-size: 1em;
-  color: #333;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  max-width: 600px; /* Keep the text width manageable */
-  margin-left: auto;
-  margin-right: auto;
 }
