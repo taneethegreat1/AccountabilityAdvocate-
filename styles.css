@@ -653,3 +653,25 @@ video {
   height: auto;
   border-radius: 8px;
 }
+.video-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+}
+
+.video-wrapper {
+  max-width: 400px; /* Adjust size as necessary */
+  flex: 1; /* Ensures videos are evenly spaced */
+}
+
+video {
+  width: 100%; /* Ensures the video fits within the container */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
