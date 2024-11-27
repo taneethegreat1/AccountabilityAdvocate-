@@ -633,3 +633,23 @@ footer {
   border-radius: 8px;
   overflow: hidden;
 }
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Stack videos on smaller screens */
+  gap: 20px; /* Space between videos */
+}
+
+.video-wrapper {
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
